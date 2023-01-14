@@ -1,0 +1,114 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    width: 1200px;
+    
+    
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    background-color: #3cb371;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    box-sizing: border-box;
+    
+}
+article {
+    display: inline-block;  
+    /* align-items: baseline; */
+    float: left;
+    
+}
+div{
+    margin: 10px;
+}
+
+.first img{
+    width: 700px;
+    height: 500px;
+}
+.first{
+    width: 700px;
+    height: 640px;
+    background: white;  
+}
+article .second img{
+    width: 700px;
+    height: 500px;
+
+}
+article .second{
+    width: 700px;
+    height: 640px;
+    background: white;
+
+}
+.small img{
+    width: 350px;
+    height: 250px;
+}
+.small .mazas{
+    width: 350px;
+    height: 200px;
+    background: white;
+
+}
+article .pirmas{
+    width: 350px;
+    height: 450px;
+    background: white;
+}
+.big h3, p{
+    margin: 14px;
+}
+.small div h3{
+    margin-left: 14px;
+}
+p{
+    color: #6b727f;
+}
+.comments{
+    font-size: 12px;
+    margin-left: 0;
+    display: flex;
+    justify-content: space-between;
+}
+.comments-small{
+    font-size: 12px;
+    margin-left: 0;
+    display: flex;
+    margin-top: 70px;
+    justify-content: space-between;
+}
+
+/* Mobile styles */
+@media only screen and (max-width: 600px) {
+    body {
+      width: 100%; /* Change the width to take up the full screen on mobile */
+    }
+    article {
+      float: none; /* Remove the float */
+      display: block; /* Change to block so elements stack vertically */
+    }
+    .first img, article .second img, .small img {
+      width: 100%; 
+      height: auto; 
+    }
+    .first, article .second, .small .mazas, article .pirmas {
+      width: 100%; 
+    }
+    .big h3, p, .small div h3 {
+      margin: 10px; 
+    }
+    .first{
+        height: 70%;
+
+    }
+    div.second{
+        height: 70%;
+    }
+  }
+  
