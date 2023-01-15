@@ -85,20 +85,21 @@ p{
 }
 
 /* Mobile styles */
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 550px) {
     body {
-      width: 100%; /* Change the width to take up the full screen on mobile */
+      width: 100%; 
     }
     article {
-      float: none; /* Remove the float */
-      display: block; /* Change to block so elements stack vertically */
+      margin-right: 10px;
+      float: none; 
+      display: block; 
     }
     .first img, article .second img, .small img {
       width: 100%; 
       height: auto; 
     }
     .first, article .second, .small .mazas, article .pirmas {
-      width: 100%; 
+      width: 99%!important; 
     }
     .big h3, p, .small div h3 {
       margin: 10px; 
@@ -109,6 +110,11 @@ p{
     }
     div.second{
         height: 70%;
+    }
+
+    .small .pirmas{
+        height: 70%;
+
     }
   }
   
